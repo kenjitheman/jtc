@@ -43,6 +43,12 @@ core.Convert("../man.json", "../man.csv")
 core.AsyncConvert("../man.json", "../man1.csv")
 ```
 
+- also you can change the number of concurrent goroutines:
+
+```
+const numWorkers = 4 // num of concurrent goroutines | change it if you want/need more or less
+```
+
 ## contributing
 
 - pull requests are welcome, for major changes, please open an issue first to
