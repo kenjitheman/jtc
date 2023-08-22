@@ -29,10 +29,18 @@ go get github.com/kenjitheman/json-to-csv
 
 ## usage
 
-- use:
+```
+Convert(jsonFilePath string, outputCsvFileName string)
 
+AsyncConvert(jsonFilePath string, outputCsvFileName string)
 ```
 
+- example:
+
+```
+core.Convert("../man.json", "../man.csv")
+
+core.AsyncConvert("../man.json", "../man1.csv")
 ```
 
 ## contributing
