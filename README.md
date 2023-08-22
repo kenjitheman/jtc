@@ -1,4 +1,4 @@
-<h2 align="center">json-to-csv simple sync/async converter tool | library</h2>
+<h2 align="center">json-to-csv simple sync/async converter tool</h2>
 
 ###
 
