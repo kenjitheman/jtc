@@ -5,6 +5,6 @@ import (
 )
 
 func main() {
-	core.Convert()
-	core.AsyncConvert()
+	core.Convert("../man.json", "../man.csv")
+	core.AsyncConvert("../man.json", "../man1.csv")
 }
