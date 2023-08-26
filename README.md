@@ -11,12 +11,7 @@
 ## project structure:
 
 ```
-├── cmd
-│   └── main.go
-├── core
-│   └── core.go
-├── go.mod
-└── README.md
+
 ```
 
 ## installation
@@ -24,29 +19,26 @@
 - use go get:
 
 ```
-go get github.com/kenjitheman/json-to-csv
+go get github.com/kenjitheman/jtoc
 ```
 
 ## usage
 
 ```
-Convert(jsonFilePath string, outputCsvFileName string)
+jtoc.Convert(jsonFilePath string, outputCsvFileName string)
 
-AsyncConvert(jsonFilePath string, outputCsvFileName string)
+jtoc.AsyncConvert(jsonFilePath string, outputCsvFileName string, numWorkers int)
 ```
+
+- numWorkers - num of concurrent goroutines | change it if you want/need more or
+  less
 
 - example:
 
 ```
-core.Convert("../man.json", "../man.csv")
+jtoc.Convert("../man.json", "../man.csv")
 
-core.AsyncConvert("../man.json", "../man1.csv")
-```
-
-- also you can change the number of concurrent goroutines:
-
-```
-const numWorkers = 4 // num of concurrent goroutines | change it if you want/need more or less
+jtoc.AsyncConvert("../man.json", "../man1.csv", 8)
 ```
 
 ## contributing
