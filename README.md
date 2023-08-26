@@ -11,7 +11,10 @@
 ## project structure:
 
 ```
-
+├── go.mod
+├── jtoc.go
+├── LICENSE
+└── README.md
 ```
 
 ## installation
