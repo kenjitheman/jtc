@@ -1,4 +1,4 @@
-package core
+package jtoc
 
 import (
 	"encoding/csv"
@@ -52,7 +52,7 @@ func Convert(jsonFilePath, outputCsvFileName string) {
 	fmt.Println("[SUCCESS] conversion successful!")
 }
 
-func AsyncConvert(jsonFilePath, outputCsvFileName string) {
+func AsyncConvert(jsonFilePath, outputCsvFileName string, numWorkers int) {
 	jsonData, err := os.ReadFile(jsonFilePath)
 	if err != nil {
 		fmt.Println("[ERROR] error reading JSON file:", err)
@@ -71,7 +71,6 @@ func AsyncConvert(jsonFilePath, outputCsvFileName string) {
 
 	var wg sync.WaitGroup
 
-	const numWorkers = 4 // concurrent Goroutines
 	for i := 0; i < numWorkers; i++ {
 		wg.Add(1)
 		go processJSON(jsonChannel, &wg, outputCsvFileName)
