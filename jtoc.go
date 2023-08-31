@@ -49,7 +49,7 @@ func Convert(jsonFilePath, outputCsvFileName string) {
 		csvWriter.Write(row)
 	}
 
-	fmt.Println("[SUCCESS] conversion successful!")
+	fmt.Println("[SUCCESS] converted successfully")
 }
 
 func AsyncConvert(jsonFilePath, outputCsvFileName string, numWorkers int) {
@@ -83,7 +83,7 @@ func AsyncConvert(jsonFilePath, outputCsvFileName string, numWorkers int) {
 
 	wg.Wait()
 
-	fmt.Println("[SUCCESS] asynchronous conversion successful !")
+	fmt.Println("[SUCCESS] converted successfully")
 }
 
 func processJSON(
