@@ -1,4 +1,4 @@
-<h2 align="center">json-to-csv simple sync/async converter</h2>
+<h3 align="center">json-to-csv simple sync/async converter</h3>
 
 ###
 
@@ -18,8 +18,6 @@
 ```
 
 ## installation
-
-- use go get:
 
 ```
 go get github.com/kenjitheman/jtoc
