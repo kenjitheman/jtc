@@ -10,7 +10,7 @@
 
 ## project structure:
 
-```
+```go
 ├── go.mod
 ├── jtoc.go
 ├── LICENSE
@@ -19,13 +19,13 @@
 
 ## installation
 
-```
+```shell
 go get github.com/kenjitheman/jtoc
 ```
 
 ## usage
 
-```
+```go
 jtoc.Convert(jsonFilePath string, outputCsvFileName string)
 
 jtoc.AsyncConvert(jsonFilePath string, outputCsvFileName string, numWorkers int)
@@ -36,7 +36,7 @@ jtoc.AsyncConvert(jsonFilePath string, outputCsvFileName string, numWorkers int)
 
 - example:
 
-```
+```go
 jtoc.Convert("../man.json", "../man.csv")
 
 jtoc.AsyncConvert("../man.json", "../man1.csv", 8)
