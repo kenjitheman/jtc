@@ -8,7 +8,7 @@
 
 ###
 
-## project structure:
+## Project structure:
 
 ```go
 ├── go.mod
@@ -17,13 +17,13 @@
 └── README.md
 ```
 
-## installation
+## Installation
 
 ```shell
 go get github.com/kenjitheman/jtoc
 ```
 
-## usage
+## Usage
 
 ```go
 jtoc.Convert(jsonFilePath string, outputCsvFileName string)
@@ -31,10 +31,10 @@ jtoc.Convert(jsonFilePath string, outputCsvFileName string)
 jtoc.AsyncConvert(jsonFilePath string, outputCsvFileName string, numWorkers int)
 ```
 
-- numWorkers - num of concurrent goroutines | change it if you want/need more or
-  less
+- NumWorkers - num of concurrent goroutines | change it if you want/need more or
+  less.
 
-- example:
+- Example:
 
 ```go
 jtoc.Convert("../man.json", "../man.csv")
@@ -42,10 +42,10 @@ jtoc.Convert("../man.json", "../man.csv")
 jtoc.AsyncConvert("../man.json", "../man1.csv", 8)
 ```
 
-## contributing
+## Contributing
 
-- pull requests are welcome, for major changes, please open an issue first to
-  discuss what you would like to change
+- Pull requests are welcome, for major changes, please open an issue first to
+  discuss what you would like to change.
 
 ## license
 
