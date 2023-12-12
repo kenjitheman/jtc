@@ -11,6 +11,8 @@
 ## Project structure:
 
 ```go
+jtoc
+│
 ├── go.mod
 ├── jtoc.go
 ├── LICENSE
