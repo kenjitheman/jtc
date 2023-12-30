@@ -51,4 +51,4 @@ jtoc.AsyncConvert("../man.json", "../man1.csv", 8)
 
 ## license
 
-- [MIT](https://choosealicense.com/licenses/mit/)
+- [MIT](./LICENSE)
